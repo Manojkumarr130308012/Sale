@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/circularbordersolid"
+    android:layout_marginBottom="2dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@color/primary_dark"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/itemname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:layout_toRightOf="@+id/img_letter_icon"
+            android:textColor="@color/primary_dark"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/del"
+            android:layout_weight=".2"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_delete"></ImageView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:layout_toRightOf="@+id/img_letter_icon"
+            android:textColor="@color/primary_dark"
+            android:textAppearance="?attr/textAppearanceListItem" />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:layout_toRightOf="@+id/img_letter_icon"
+            android:textColor="@color/primary_dark"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:background="@color/divider"
+    android:layout_height="0.2dp"></View>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

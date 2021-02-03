@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activity.Additemticket">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/lin"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="CustomerName"
+            />
+        <TextView
+            android:id="@+id/CustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="CustomerAddress"
+            />
+        <TextView
+            android:id="@+id/CustomerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Total Amount"
+            />
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/circularbordersolid"
+        android:gravity="center"
+        android:id="@+id/linb3"
+        android:layout_below="@+id/lin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/personalinfobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="Accessories"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgrey" />
+
+        <TextView
+            android:id="@+id/Bussinessbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="Digital"
+            android:textAllCaps="true"
+            android:textColor="@color/primary_dark"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_below="@+id/linb3"
+    android:layout_width="match_parent"
+    android:id="@+id/rel"
+    android:background="@drawable/circularwhitebordersolid"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin1"
+        android:weightSum="2"
+
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+       >
+
+
+
+        <com.tiper.MaterialSpinner
+            android:id="@+id/itemadd"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Item"
+            android:gravity="center"
+            android:layout_weight="1.8"
+            android:layout_gravity="center"
+            app:spinnerMode="bottomsheet" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:gravity="center"
+        android:id="@+id/lin2"
+        android:layout_below="@+id/lin1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/item3"
+            android:gravity="center"
+            android:layout_weight="0.8"
+            >
+            <com.example.sale.Util.adderView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:id="@+id/adderview"
+                android:hint="Qty"
+                app:qv_quantity="10"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"></TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/item1"
+            android:layout_weight="0.8"
+            android:hint="Price"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/price"
+                android:enabled="false"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin4"
+        android:weightSum="2"
+        android:layout_below="@+id/lin2"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+
+
+        <com.tiper.MaterialSpinner
+            android:id="@+id/status"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Status"
+            android:layout_weight="1"
+            app:spinnerMode="bottomsheet" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"></TextView>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/lin2"
+            android:id="@+id/add"
+            android:layout_weight="0.7"
+            android:layout_alignParentRight="true"
+            android:text="Add"></Button>
+    </LinearLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+          android:layout_below="@+id/lin4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyt_details"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/simpleListView"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:dividerHeight="1dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+
+            <ProgressBar
+                android:id="@+id/log_progress"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+               />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Next"
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom"
+        android:background="@color/primary_dark"
+        android:textColor="@color/light"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/login_btn"></Button>
+
+
+
+
+
+</RelativeLayout>

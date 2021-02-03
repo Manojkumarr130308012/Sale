@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/card"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="5dp"
+        android:background="@color/blue1"
+        android:layout_height="match_parent"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_height="wrap_content">
+
+    <ImageView android:layout_width="45dp"
+        android:layout_margin="8dp"
+        android:layout_height="45dp"
+        android:id="@+id/img_letter_icon"/>
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+          android:layout_margin="10dp"
+        android:visibility="gone"
+        android:id="@+id/telephone"
+        android:src="@drawable/telephone" />
+
+    <TextView
+        android:id="@+id/txt_customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_letter_icon"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/primary_text_dark"
+         />
+
+
+    <TextView
+        android:id="@+id/txt_customer_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_letter_icon"
+        android:layout_below="@+id/txt_customer_name"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/primary_text_light"
+      />
+
+    <TextView
+        android:id="@+id/txt_customer_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_letter_icon"
+        android:layout_below="@+id/txt_customer_place"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/primary_text_light"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_customer_os_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_letter_icon"
+        android:layout_below="@+id/txt_customer_number"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text_light"
+       />
+
+    <ru.embersoft.expandabletextview.ExpandableTextView
+        android:id="@+id/descTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:etv_animationTime="20"
+        app:etv_expandLines="0"
+        app:etv_showLine="false"
+        app:etv_textContentSize="14sp"
+        app:etv_textExpand="Show more"
+        app:etv_textShrink="Show less"
+        app:etv_textContentColor="#000000"
+        app:etv_textStateColor="@color/colorPrimaryDark"
+        android:padding="10dp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@+id/txt_customer_os_amount"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        />
+
+</RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

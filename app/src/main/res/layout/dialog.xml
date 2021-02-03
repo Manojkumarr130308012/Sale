@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/primary_dark">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="TicketID"
+            />
+        <TextView
+            android:id="@+id/TicketID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="TicketNo"
+            />
+        <TextView
+            android:id="@+id/TicketNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="TicketDate"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/TicketDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="CustomerName"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/CustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="CustomerAddress"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/CustomerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Description"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Priority"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/Priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Status"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="CreatedBy"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/CreatedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/block"
+            android:layout_toRightOf="@+id/imageDialog"/>
+
+
+        <Button
+            android:id="@+id/declineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Next "
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
